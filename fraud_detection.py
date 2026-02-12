@@ -11,7 +11,7 @@ st.markdown("Please enter the transaction details to predict whether it is fraud
 
 st.divider()
 
-transaction_type = st.selectbox("Transaction Type", ["Payment", "Transfer", "Cash Out","Deposit"])
+transaction_type = st.selectbox("Transaction Type", ["TRANSFER", "CASH_OUT", "PAYMENT", "DEPOSIT"])
 amount = st.number_input("Amount", min_value=0.0, value = 1000.0)
 oldbalanceOrg = st.number_input("Old Balance Origin (sender)", min_value=0.0, value = 10000.0)
 newbalanceOrig = st.number_input("New Balance Origin (sender)", min_value=0.0, value = 9000.0)
